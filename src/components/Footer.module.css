@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 max(24px, calc((100% - 1120px) / 2));
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-faint);
+  font-size: 12px;
+}
+
+.footer span:first-child {
+  color: var(--color-text-secondary);
+  font-weight: 650;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    gap: 12px;
+    padding: 16px;
+    font-size: 11px;
+  }
+}

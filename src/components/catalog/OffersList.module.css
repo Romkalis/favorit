@@ -1,0 +1,151 @@
+.section {
+  margin: 0;
+}
+
+.heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.eyebrow {
+  color: var(--color-text-faint);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.heading h2 {
+  margin: 6px 0 0;
+  color: var(--color-text-heading);
+  font-size: 19px;
+  font-weight: 680;
+  letter-spacing: -0.025em;
+}
+
+.count {
+  padding-bottom: 2px;
+  color: var(--color-text-faint);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 14px 17px;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 13px;
+}
+
+.table th {
+  background: var(--color-surface-muted);
+  color: var(--color-text-table-header);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.table td {
+  color: var(--color-text-table);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table .part {
+  color: var(--color-text-strong);
+  font-weight: 600;
+}
+
+.table .price {
+  color: var(--color-text-strong);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.stock {
+  color: var(--color-success);
+  white-space: nowrap;
+}
+
+.outOfStock {
+  color: var(--color-text-faint);
+  white-space: nowrap;
+}
+
+.empty,
+.error {
+  margin: 0;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.empty {
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+}
+
+.error {
+  background: var(--color-surface-danger);
+  color: var(--color-danger);
+}
+
+.error p {
+  margin: 0;
+}
+
+.retry {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: var(--color-surface);
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 150ms ease;
+}
+
+.retry:hover {
+  background: var(--color-primary-hover);
+}
+
+.retry:active {
+  background: var(--color-primary-active);
+}
+
+@media (max-width: 600px) {
+  .heading {
+    align-items: start;
+  }
+
+  .heading h2 {
+    font-size: 17px;
+  }
+
+  .table {
+    min-width: 640px;
+  }
+
+  .table th,
+  .table td {
+    padding: 12px;
+  }
+}

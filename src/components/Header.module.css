@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  width: min(100% - 48px, 1120px);
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 17px;
+  font-weight: 720;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 25px;
+  height: 25px;
+}
+
+.caption {
+  color: var(--color-text-subtle);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: calc(100% - 28px);
+    height: 62px;
+  }
+}

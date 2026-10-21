@@ -1,0 +1,31 @@
+.loader {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 22px 0 6px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.loader img {
+  width: 24px;
+  height: 24px;
+  animation: gear-spin 1.15s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes gear-spin {
+  from {
+    transform: perspective(180px) rotateX(18deg) rotateY(0) rotateZ(0);
+  }
+
+  to {
+    transform: perspective(180px) rotateX(18deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader img {
+    animation-duration: 3s;
+  }
+}

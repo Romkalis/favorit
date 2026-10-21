@@ -1,0 +1,39 @@
+:root {
+  --color-text: #182435;
+  --color-text-strong: #25364b;
+  --color-text-heading: #26364a;
+  --color-text-body: #344256;
+  --color-text-secondary: #526174;
+  --color-text-table: #59687b;
+  --color-text-muted: #697789;
+  --color-text-subtle: #7c899a;
+  --color-text-faint: #8290a1;
+  --color-text-placeholder: #9aa5b3;
+  --color-text-divider: #b1bac5;
+  --color-text-table-header: #748196;
+
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #1e40af;
+  --color-primary-focus: rgb(37 99 235 / 12%);
+  --color-focus-ring: rgb(37 99 235 / 35%);
+
+  --color-success: #278052;
+  --color-danger: #a83636;
+  --color-danger-text: #c03939;
+  --color-danger-border: #d14343;
+
+  --color-background: #f5f7fa;
+  --color-surface: #fff;
+  --color-surface-muted: #f8fafc;
+  --color-surface-empty: #f4f7fa;
+  --color-surface-danger: #fff5f4;
+
+  --color-border: #e5eaf0;
+  --color-border-light: #edf0f4;
+  --color-border-card: #e6ebf1;
+  --color-border-input: #d9e0e8;
+  --color-border-input-hover: #aab8ca;
+
+  --color-shadow: rgb(30 55 90 / 4%);
+}
